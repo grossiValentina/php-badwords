@@ -25,7 +25,7 @@ $word = $_GET["word"];
 
     <!-- nuovo paragrafo con parola censurata -->
     <h2>Questo è il tuo nuovo paragrafo con la parola censurata</h2>
-    <?php $new_paragraph = str_replace("$word", "***", "$paragraph"); ?>
+    <?php $new_paragraph = str_replace($word, "***", $paragraph); ?>
     <?php echo $new_paragraph; ?>
 
 </body>
